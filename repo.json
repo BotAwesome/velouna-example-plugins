@@ -2,7 +2,7 @@
   "format": 1,
   "name": "Velouna examples",
   "maintainer": "BotAwesome",
-  "homepage": "https://github.com/BotAwesome/example-plugins",
+  "homepage": "https://github.com/BotAwesome/velouna-example-plugins",
   "key": "ed25519:NIsx6FGSN40zF7+GKzJEvPPPDkYEO+pDE7xY9+drOIQ=",
   "plugins": [
     {

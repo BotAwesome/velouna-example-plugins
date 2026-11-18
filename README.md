@@ -8,10 +8,10 @@ The plugins Velouna offers in its built-in catalog live in [velouna-plugins](htt
 ## Try the examples in Velouna
 
 1. In Velouna open **Settings → Extensions → Repos** and choose **Add repo**.
-2. Paste `https://github.com/BotAwesome/example-plugins` and confirm.
+2. Paste `https://github.com/BotAwesome/velouna-example-plugins` and confirm.
 3. The examples now show up under **Catalog**. Tick what you want and choose **Install selected**.
 
-To add a single example, link its folder instead, for example `https://github.com/BotAwesome/example-plugins/tree/main/plugins/example-bars`.
+To add a single example, link its folder instead, for example `https://github.com/BotAwesome/velouna-example-plugins/tree/main/plugins/example-bars`.
 
 ## The examples
 
