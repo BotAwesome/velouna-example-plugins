@@ -56,6 +56,158 @@
       ]
     },
     {
+      "id": "dev.botawesome.example-clean-titles",
+      "name": {
+        "de": "Beispiel: Titel säubern",
+        "en": "Example: Clean titles"
+      },
+      "description": {
+        "de": "Entfernt „(Official Video)“ und Ähnliches aus Titeln und trennt „Interpret – Titel“. Zeigt den Hook track-info",
+        "en": "Removes “(Official Video)” and the like from titles and splits “Artist – Title”. Shows the track-info hook"
+      },
+      "kind": "lua",
+      "author": "BotAwesome",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "api": 2,
+          "velouna": ">=0.4.0",
+          "url": "packages/dev.botawesome.example-clean-titles/dev.botawesome.example-clean-titles-1.0.0.velounaplugin",
+          "sha256": "dc65e5f139c562f391f2ea2097aeb4cd55cd78a2734853306a9287218c924640",
+          "size": 1140,
+          "permissions": [],
+          "changes": ""
+        }
+      ]
+    },
+    {
+      "id": "dev.botawesome.example-effects",
+      "name": {
+        "de": "Beispiel: Effekte",
+        "en": "Example: Effects"
+      },
+      "description": {
+        "de": "Graustufen-Bild per Shader, ein Nachtmodus für den Ton und ein Sleep-Timer. Zeigt video-shader, audio-filter und velouna.timer",
+        "en": "A grayscale picture by shader, a night mode for the sound and a sleep timer. Shows video-shader, audio-filter and velouna.timer"
+      },
+      "kind": "lua",
+      "author": "BotAwesome",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "api": 2,
+          "velouna": ">=0.4.0",
+          "url": "packages/dev.botawesome.example-effects/dev.botawesome.example-effects-1.0.0.velounaplugin",
+          "sha256": "76feda95a6f983ead9d4d29a098187c6558895becee588d8f6b69b92c5c200a8",
+          "size": 1663,
+          "permissions": [],
+          "changes": ""
+        }
+      ]
+    },
+    {
+      "id": "dev.botawesome.example-log",
+      "name": {
+        "de": "Beispiel: Titel-Log",
+        "en": "Example: Track log"
+      },
+      "description": {
+        "de": "Schreibt Titelwechsel, Pausen und Sprünge in die Plugin-Konsole. Zeigt Ereignisse und den eigenen Speicher",
+        "en": "Writes track changes, pauses and seeks to the plugin console. Shows events and the plugin's own storage"
+      },
+      "kind": "lua",
+      "author": "BotAwesome",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "api": 2,
+          "velouna": ">=0.4.0",
+          "url": "packages/dev.botawesome.example-log/dev.botawesome.example-log-1.0.0.velounaplugin",
+          "sha256": "12f850f52d72492a7250c44a0da8fdccd1a844a1a4ee012bce9fd353c8d5eb1f",
+          "size": 1244,
+          "permissions": [],
+          "changes": ""
+        }
+      ]
+    },
+    {
+      "id": "dev.botawesome.example-module",
+      "name": {
+        "de": "Beispiel: Modul",
+        "en": "Example: Module"
+      },
+      "description": {
+        "de": "Gemeinsamer Code für andere Plugins: Zeiten formatieren, Feeds lesen. Zeigt Module und requires",
+        "en": "Shared code for other plugins: formatting times, reading feeds. Shows modules and requires"
+      },
+      "kind": "lua",
+      "author": "BotAwesome",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "api": 2,
+          "velouna": ">=0.4.0",
+          "url": "packages/dev.botawesome.example-module/dev.botawesome.example-module-1.0.0.velounaplugin",
+          "sha256": "bc8220427a3da5ca6cf9dad9e2bac9647f0dc986837600c98f9200f6fce50231",
+          "size": 1340,
+          "permissions": [],
+          "changes": ""
+        }
+      ]
+    },
+    {
+      "id": "dev.botawesome.example-notes",
+      "name": {
+        "de": "Beispiel: Notizen",
+        "en": "Example: Notes"
+      },
+      "description": {
+        "de": "Notizen zu einer Stelle im Video, über das Player-Menü und einen Knopf in der Player-Leiste. Zeigt Menüs, Dialoge, Knöpfe und Hinweise",
+        "en": "Notes at a point of a video, from the player menu and a button in the player bar. Shows menus, dialogs, buttons and toasts"
+      },
+      "kind": "lua",
+      "author": "BotAwesome",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "api": 2,
+          "velouna": ">=0.4.0",
+          "url": "packages/dev.botawesome.example-notes/dev.botawesome.example-notes-1.0.0.velounaplugin",
+          "sha256": "14b207e66e807523af1b6e74506ea119aac5e2b14d21d256ddcfd8b36d462669",
+          "size": 1605,
+          "permissions": [],
+          "changes": ""
+        }
+      ]
+    },
+    {
+      "id": "dev.botawesome.example-rss",
+      "name": {
+        "de": "Beispiel: Podcasts (RSS)",
+        "en": "Example: Podcasts (RSS)"
+      },
+      "description": {
+        "de": "Podcasts aus RSS-Feeds als Quelle in der Bibliothek, mit Suche und einem Abschnitt auf der Startseite. Zeigt Quellen, Items, Module und die Startseite",
+        "en": "Podcasts from RSS feeds as a source in the library, with search and a section on the start page. Shows sources, items, modules and the start page"
+      },
+      "kind": "lua",
+      "author": "BotAwesome",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "api": 2,
+          "velouna": ">=0.4.0",
+          "url": "packages/dev.botawesome.example-rss/dev.botawesome.example-rss-1.0.0.velounaplugin",
+          "sha256": "5a1dbe889a0b4f3be38e0737344f98493e536c0a7f4a3e83621577e2bdb40897",
+          "size": 1948,
+          "permissions": [
+            "network:*"
+          ],
+          "changes": ""
+        }
+      ]
+    },
+    {
       "id": "dev.botawesome.example-sections",
       "name": {
         "de": "Beispiel: Songteile",
@@ -75,6 +227,31 @@
           "url": "packages/dev.botawesome.example-sections/dev.botawesome.example-sections-1.0.0.velounaplugin",
           "sha256": "de09e62ba5a54417ad8db2086789b216e5d107f12a14a58ce27cd686656e264e",
           "size": 2576,
+          "permissions": [],
+          "changes": ""
+        }
+      ]
+    },
+    {
+      "id": "dev.botawesome.example-segments",
+      "name": {
+        "de": "Beispiel: Abschnitte aus einer Datei",
+        "en": "Example: Segments from a file"
+      },
+      "description": {
+        "de": "Liest Abschnitte aus einer Datei neben dem Video (Film.segments.json) und überspringt, fragt oder markiert sie. Zeigt den Hook segments",
+        "en": "Reads segments from a file next to the video (Movie.segments.json) and skips, asks about or marks them. Shows the segments hook"
+      },
+      "kind": "lua",
+      "author": "BotAwesome",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "api": 2,
+          "velouna": ">=0.4.0",
+          "url": "packages/dev.botawesome.example-segments/dev.botawesome.example-segments-1.0.0.velounaplugin",
+          "sha256": "a29915f431c7fc4be71c7ec1ff5acce7752f225842912be1218b8c2b3d8156ad",
+          "size": 1237,
           "permissions": [],
           "changes": ""
         }
@@ -126,6 +303,33 @@
           "sha256": "6de772077324998be3b8cb4c4365be1c0c0e2b4344e7ceae1bdd83e970b26202",
           "size": 2322,
           "permissions": [],
+          "changes": ""
+        }
+      ]
+    },
+    {
+      "id": "dev.botawesome.example-webhook",
+      "name": {
+        "de": "Beispiel: Webhook",
+        "en": "Example: Webhook"
+      },
+      "description": {
+        "de": "Schickt bei jedem Titelwechsel eine Nachricht an eine Adresse in deinem Heimnetz, z. B. an Home Assistant. Zeigt http, Einstellungen und eine Aktion",
+        "en": "Sends a message to an address in your home network on every track change, e.g. to Home Assistant. Shows http, settings and an action"
+      },
+      "kind": "lua",
+      "author": "BotAwesome",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "api": 2,
+          "velouna": ">=0.4.0",
+          "url": "packages/dev.botawesome.example-webhook/dev.botawesome.example-webhook-1.0.0.velounaplugin",
+          "sha256": "c881f50960de4e6873718ad945dc24fc34202a79568deb341872288660804902",
+          "size": 1470,
+          "permissions": [
+            "network:local"
+          ],
           "changes": ""
         }
       ]
