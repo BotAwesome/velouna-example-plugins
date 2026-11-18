@@ -59,6 +59,14 @@ https://github.com/yourname/your-repo
 
 Velouna reads `repo.json` from the default branch (`raw.githubusercontent.com/yourname/your-repo/HEAD/repo.json`).
 
+On Windows, Git may change line endings on commit or checkout, which breaks the signature. Add a `.gitattributes` file to the repo with:
+
+```
+repo.json -text
+repo.json.sig -text
+*.velounaplugin binary
+```
+
 **Any web space:** upload the folder and share the address of the folder or of `repo.json`. It must be https.
 
 ## 4. Others add it
