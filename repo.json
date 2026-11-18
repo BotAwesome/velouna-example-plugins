@@ -1,8 +1,8 @@
 {
   "format": 1,
-  "name": "Velouna-Plugins",
+  "name": "Velouna examples",
   "maintainer": "BotAwesome",
-  "homepage": "https://github.com/BotAwesome/velouna-plugins",
+  "homepage": "https://github.com/BotAwesome/example-plugins",
   "key": "ed25519:NIsx6FGSN40zF7+GKzJEvPPPDkYEO+pDE7xY9+drOIQ=",
   "plugins": [
     {
@@ -330,28 +330,6 @@
           "permissions": [
             "network:local"
           ],
-          "changes": ""
-        }
-      ]
-    },
-    {
-      "id": "dev.botawesome.velounizer",
-      "name": "Velounizer",
-      "description": {
-        "de": "Tinte, Aurora und Kontur: Bilder, die deiner Musik folgen",
-        "en": "Ink, Aurora and Contour: visuals that follow your music"
-      },
-      "kind": "visualizer",
-      "author": "BotAwesome",
-      "versions": [
-        {
-          "version": "0.1.0",
-          "api": 1,
-          "velouna": ">=0.2.1",
-          "url": "packages/dev.botawesome.velounizer/dev.botawesome.velounizer-0.1.0.velounaplugin",
-          "sha256": "3f328497f1b800b6c59823fdd3bb4012eee019712dae52d85b831d55ccdce1e2",
-          "size": 12159,
-          "permissions": [],
           "changes": ""
         }
       ]

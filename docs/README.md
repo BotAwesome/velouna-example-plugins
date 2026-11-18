@@ -28,7 +28,7 @@ Themes come later. Their manifest fields are reserved already.
 |---|---|
 | [Your own repo](repos.md) | Build a signed repo, put it on GitHub, let others add it by link, link a single plugin |
 | [Forking a plugin](forking.md) | Build on someone else's plugin and publish it in your own repo |
-| [Contributing](#contributing-to-the-official-repo) | Get a plugin into this official repo |
+| [Contributing an example](#contributing-an-example) | Add an example to this repo |
 
 ## Examples
 
@@ -41,7 +41,7 @@ Each example shows one technique and is commented throughout. All are MIT, so yo
 | [`example-trails`](../plugins/example-trails) | Two passes, a half-size `feedback` pass that keeps painting on its last picture |
 | [`example-splash`](../plugins/example-splash) | A simulation: `rate: "step"`, operations from `score.lua`'s `step()`, read with `op_tex()` |
 | [`example-sections`](../plugins/example-sections) | Song sections, build-up and drop, and two presets sharing one shader |
-| [`velounizer`](../plugins/velounizer) | The full thing (GPL-3.0-or-later): Ink is a fluid-like simulation, Aurora and Contour are single-pass |
+| [`velounizer`](https://github.com/BotAwesome/velouna-plugins/tree/main/plugins/velounizer) | The full thing, in the [official repo](https://github.com/BotAwesome/velouna-plugins) (GPL-3.0-or-later): Ink is a fluid-like simulation, Aurora and Contour are single-pass |
 
 Lua plugins:
 
@@ -56,9 +56,9 @@ Lua plugins:
 | [`example-module`](../plugins/example-module) | Shared code other plugins load with `require` |
 | [`example-rss`](../plugins/example-rss) | A source in the library with search, items that play, a row on the start page |
 
-## Contributing to the official repo
+## Contributing an example
 
-Open a pull request that adds your plugin's folder under `plugins/`. The maintainer rebuilds and signs `repo.json`; don't include `repo.json` or `packages/` changes yourself.
+Open a pull request that adds your example's folder under `plugins/`. The maintainer rebuilds and signs `repo.json`; don't include `repo.json` or `packages/` changes yourself.
 
 - One plugin per folder, with a license in `plugin.json`.
 - No obfuscated code and no downloaded parts: everything the plugin runs is in its folder.

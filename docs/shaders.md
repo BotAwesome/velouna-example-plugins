@@ -168,7 +168,7 @@ void main() {
 }
 ```
 
-Store amounts in the channels (for example "how much of colour a") and turn them into colours in a later `frame` pass. Then the user can switch palettes without the simulation starting over. [`example-splash`](../plugins/example-splash) is a short simulation, the Ink preset of the [Velounizer](../plugins/velounizer/ink) a long one.
+Store amounts in the channels (for example "how much of colour a") and turn them into colours in a later `frame` pass. Then the user can switch palettes without the simulation starting over. [`example-splash`](../plugins/example-splash) is a short simulation, the Ink preset of the [Velounizer](https://github.com/BotAwesome/velouna-plugins/tree/main/plugins/velounizer/ink) a long one.
 
 Step passes only run when the preset's `score.lua` has a `step()` function. Without one, they stay black.
 

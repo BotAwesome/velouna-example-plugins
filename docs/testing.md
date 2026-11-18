@@ -70,7 +70,7 @@ Seek around. A `feedback` or `step` preset should look right a moment after a ju
 
 ## Keeping it smooth
 
-Visualizers draw every frame at up to 1920 pixels on the longer side. A preset should stay smooth on a mid-range laptop at 1080p. That's the rule for the official repo.
+Visualizers draw every frame at up to 1920 pixels on the longer side. A preset should stay smooth on a mid-range laptop at 1080p.
 
 - **Loops**: a loop over 16 rings is fine. A loop over 64 in every pixel of a full-size pass gets expensive. Do expensive work in a `scale: 0.5` pass and read it in the last pass.
 - **Noise**: every `fbm` octave costs. Three or four octaves are usually enough.

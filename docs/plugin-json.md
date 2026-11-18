@@ -41,7 +41,7 @@ my-visualizer/
 | `api` | yes | Plugin interface version: `1` for visualizers, `2` for Lua plugins. Velouna 0.4.0 loads both. |
 | `velouna` | | Lowest Velouna version, as `">=0.3.0"`. Older versions of Velouna don't offer the plugin and refuse to load it. |
 | `author` | | Your name. Forks add theirs: `"Original Author, You"`. |
-| `license` | | SPDX name, for example `MIT`, `GPL-3.0-or-later`, `CC-BY-4.0`. The official repo requires one. |
+| `license` | | SPDX name, for example `MIT`, `GPL-3.0-or-later`, `CC-BY-4.0`. |
 | `permissions` | | What the plugin may do beyond the basics. Visualizers can't ask for any: leave it empty. For Lua plugins see [Permissions](lua-plugins.md#permissions). |
 | `visualizer` | for visualizers | See [below](#visualizer). |
 
