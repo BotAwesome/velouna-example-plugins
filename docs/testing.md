@@ -17,6 +17,8 @@ To find the folder from Velouna, choose **⋯ → Show in Explorer** (Linux: **S
 
 Reload is on Windows and Linux. On Android there's no plugins folder you can reach: test there by installing a package (see [below](#on-android)).
 
+Lua plugins have a console of their own, with their log, their costs and a Lua prompt: see [Testing Lua plugins](lua-plugins.md#testing). The rest of this page is about visualizers.
+
 ## Where errors show up
 
 | Where | What it means |

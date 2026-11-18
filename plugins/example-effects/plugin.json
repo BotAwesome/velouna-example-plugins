@@ -1,0 +1,23 @@
+{
+  "id": "dev.botawesome.example-effects",
+  "name": {
+    "de": "Beispiel: Effekte",
+    "en": "Example: Effects"
+  },
+  "description": {
+    "de": "Graustufen-Bild per Shader, ein Nachtmodus für den Ton und ein Sleep-Timer. Zeigt video-shader, audio-filter und velouna.timer",
+    "en": "A grayscale picture by shader, a night mode for the sound and a sleep timer. Shows video-shader, audio-filter and velouna.timer"
+  },
+  "version": "1.0.0",
+  "api": 2,
+  "velouna": ">=0.4.0",
+  "author": "BotAwesome",
+  "license": "MIT",
+  "main": "main.lua",
+  "provides": [
+    "menu",
+    "video-shader",
+    "audio-filter"
+  ],
+  "permissions": []
+}

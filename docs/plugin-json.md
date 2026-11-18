@@ -2,6 +2,8 @@
 
 Every plugin folder has a `plugin.json` at its top. Velouna reads it when the plugin is installed, when the list is reloaded and when a repo is built.
 
+This page describes the fields every plugin has and those of visualizers. Lua plugins add a few of their own: see [plugin.json for Lua plugins](lua-plugins.md#pluginjson-for-lua-plugins).
+
 ```
 my-visualizer/
   plugin.json        manifest (required)
@@ -35,12 +37,12 @@ my-visualizer/
 | `name` | yes | Shown in lists and menus. A [text](#texts). |
 | `description` | | One line, shown in the catalog and the installed list. A [text](#texts). |
 | `version` | yes | Dotted numbers, `1.0.0`. Raise it for every release: a published version can't change. Compared number by number, so `1.10.0` is newer than `1.9.0`. |
-| `kind` | yes | `visualizer`. `lua` and `theme` are reserved for later. |
-| `api` | yes | Plugin interface version: `1`. Velouna loads the current and the previous version. |
+| `kind` | yes | `visualizer`, or `lua` for [Lua plugins](lua-plugins.md) (there you can leave it out). `theme` is reserved for later. |
+| `api` | yes | Plugin interface version: `1` for visualizers, `2` for Lua plugins. Velouna 0.4.0 loads both. |
 | `velouna` | | Lowest Velouna version, as `">=0.3.0"`. Older versions of Velouna don't offer the plugin and refuse to load it. |
 | `author` | | Your name. Forks add theirs: `"Original Author, You"`. |
 | `license` | | SPDX name, for example `MIT`, `GPL-3.0-or-later`, `CC-BY-4.0`. The official repo requires one. |
-| `permissions` | | What the plugin may do beyond the basics. Visualizers can't ask for any: leave it empty. |
+| `permissions` | | What the plugin may do beyond the basics. Visualizers can't ask for any: leave it empty. For Lua plugins see [Permissions](lua-plugins.md#permissions). |
 | `visualizer` | for visualizers | See [below](#visualizer). |
 
 ### Texts

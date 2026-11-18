@@ -11,14 +11,23 @@ Velouna ships with this repo already added: open **Settings → Extensions → C
 | [Example: Trails](plugins/example-trails) | Visualizer | Dots with trails: two passes and a feedback pass |
 | [Example: Splash](plugins/example-splash) | Visualizer | Splashes on hits: a simulation driven by `step()` |
 | [Example: Sections](plugins/example-sections) | Visualizer | Sun and moon that follow build-ups and drops: two presets, one shader |
+| [Example: Track log](plugins/example-log) | Lua | Track changes, pauses and seeks in the plugin console |
+| [Example: Clean titles](plugins/example-clean-titles) | Lua | Removes "(Official Video)" and the like, splits "Artist – Title" |
+| [Example: Segments from a file](plugins/example-segments) | Lua | Skips, asks about or marks parts of a video from a file next to it |
+| [Example: Notes](plugins/example-notes) | Lua | Notes at a point of a video, from the menu and a button |
+| [Example: Effects](plugins/example-effects) | Lua | Grayscale picture, night mode for the sound, sleep timer |
+| [Example: Webhook](plugins/example-webhook) | Lua | Tells a device in your home network about every track change |
+| [Example: Module](plugins/example-module) | Lua | Shared code for other plugins |
+| [Example: Podcasts (RSS)](plugins/example-rss) | Lua | Podcasts from RSS feeds as a source in the library |
 
 To share one plugin of this repo without the others, link its folder, for example `https://github.com/BotAwesome/velouna-plugins/tree/main/plugins/example-bars`.
 
 ## Write your own plugin
 
-A visualizer is a folder with a `plugin.json`, a GLSL shader and, if you like, a small Lua script. No compiler and no tools are needed: write it in Velouna's plugins folder, click **Reload**, look.
+A visualizer is a folder with a `plugin.json`, a GLSL shader and, if you like, a small Lua script. A Lua plugin is a folder with a `plugin.json` and a `main.lua`. No compiler and no tools are needed: write it in Velouna's plugins folder, click **Reload**, look.
 
 - **[Getting started](docs/getting-started.md)**: your first visualizer, step by step.
+- **[Lua plugins](docs/lua-plugins.md)**: events, hooks, menus, sources and everything else a Lua plugin can do.
 - [All documentation](docs/README.md): [plugin.json](docs/plugin-json.md), [shaders](docs/shaders.md), [score.lua](docs/score-lua.md), [testing](docs/testing.md).
 - [Your own repo](docs/repos.md): build a signed repo, put it on GitHub, and let others add it by link.
 - [Forking a plugin](docs/forking.md): build on someone else's plugin.

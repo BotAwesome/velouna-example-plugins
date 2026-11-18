@@ -1,0 +1,27 @@
+{
+  "id": "dev.botawesome.example-notes",
+  "name": {
+    "de": "Beispiel: Notizen",
+    "en": "Example: Notes"
+  },
+  "description": {
+    "de": "Notizen zu einer Stelle im Video, über das Player-Menü und einen Knopf in der Player-Leiste. Zeigt Menüs, Dialoge, Knöpfe und Hinweise",
+    "en": "Notes at a point of a video, from the player menu and a button in the player bar. Shows menus, dialogs, buttons and toasts"
+  },
+  "version": "1.0.0",
+  "api": 2,
+  "velouna": ">=0.4.0",
+  "author": "BotAwesome",
+  "license": "MIT",
+  "main": "main.lua",
+  "provides": [
+    "menu",
+    "player-button"
+  ],
+  "permissions": [],
+  "devices": [
+    "desktop",
+    "phone",
+    "tablet"
+  ]
+}

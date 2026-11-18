@@ -1,0 +1,56 @@
+{
+  "id": "dev.botawesome.example-webhook",
+  "name": {
+    "de": "Beispiel: Webhook",
+    "en": "Example: Webhook"
+  },
+  "description": {
+    "de": "Schickt bei jedem Titelwechsel eine Nachricht an eine Adresse in deinem Heimnetz, z. B. an Home Assistant. Zeigt http, Einstellungen und eine Aktion",
+    "en": "Sends a message to an address in your home network on every track change, e.g. to Home Assistant. Shows http, settings and an action"
+  },
+  "version": "1.0.0",
+  "api": 2,
+  "velouna": ">=0.4.0",
+  "author": "BotAwesome",
+  "license": "MIT",
+  "main": "main.lua",
+  "provides": [
+    "service"
+  ],
+  "permissions": [
+    "network:local"
+  ],
+  "settings": [
+    {
+      "id": "url",
+      "type": "text",
+      "label": {
+        "de": "Webhook-Adresse",
+        "en": "Webhook address"
+      },
+      "help": {
+        "de": "z. B. http://homeassistant.local:8123/api/webhook/velouna",
+        "en": "e.g. http://homeassistant.local:8123/api/webhook/velouna"
+      },
+      "default": ""
+    },
+    {
+      "id": "music_only",
+      "type": "toggle",
+      "label": {
+        "de": "Nur bei Musik",
+        "en": "Music only"
+      },
+      "default": false
+    },
+    {
+      "id": "test",
+      "type": "action",
+      "label": {
+        "de": "Test senden",
+        "en": "Send a test"
+      },
+      "run": "test"
+    }
+  ]
+}

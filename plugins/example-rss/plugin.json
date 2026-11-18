@@ -1,0 +1,45 @@
+{
+  "id": "dev.botawesome.example-rss",
+  "name": {
+    "de": "Beispiel: Podcasts (RSS)",
+    "en": "Example: Podcasts (RSS)"
+  },
+  "description": {
+    "de": "Podcasts aus RSS-Feeds als Quelle in der Bibliothek, mit Suche und einem Abschnitt auf der Startseite. Zeigt Quellen, Items, Module und die Startseite",
+    "en": "Podcasts from RSS feeds as a source in the library, with search and a section on the start page. Shows sources, items, modules and the start page"
+  },
+  "version": "1.0.0",
+  "api": 2,
+  "velouna": ">=0.4.0",
+  "author": "BotAwesome",
+  "license": "MIT",
+  "main": "main.lua",
+  "provides": [
+    "source",
+    "home"
+  ],
+  "requires": [
+    {
+      "id": "dev.botawesome.example-module",
+      "version": ">=1.0.0"
+    }
+  ],
+  "permissions": [
+    "network:*"
+  ],
+  "settings": [
+    {
+      "id": "feeds",
+      "type": "text",
+      "label": {
+        "de": "Feeds (durch Leerzeichen getrennt)",
+        "en": "Feeds (separated by spaces)"
+      },
+      "help": {
+        "de": "Adressen von RSS-Feeds",
+        "en": "Addresses of RSS feeds"
+      },
+      "default": ""
+    }
+  ]
+}

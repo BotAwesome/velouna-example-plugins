@@ -1,0 +1,21 @@
+{
+  "id": "dev.botawesome.example-module",
+  "name": {
+    "de": "Beispiel: Modul",
+    "en": "Example: Module"
+  },
+  "description": {
+    "de": "Gemeinsamer Code für andere Plugins: Zeiten formatieren, Feeds lesen. Zeigt Module und requires",
+    "en": "Shared code for other plugins: formatting times, reading feeds. Shows modules and requires"
+  },
+  "version": "1.0.0",
+  "api": 2,
+  "velouna": ">=0.4.0",
+  "author": "BotAwesome",
+  "license": "MIT",
+  "main": "lib.lua",
+  "provides": [
+    "module"
+  ],
+  "permissions": []
+}

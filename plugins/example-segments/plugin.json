@@ -1,0 +1,21 @@
+{
+  "id": "dev.botawesome.example-segments",
+  "name": {
+    "de": "Beispiel: Abschnitte aus einer Datei",
+    "en": "Example: Segments from a file"
+  },
+  "description": {
+    "de": "Liest Abschnitte aus einer Datei neben dem Video (Film.segments.json) und überspringt, fragt oder markiert sie. Zeigt den Hook segments",
+    "en": "Reads segments from a file next to the video (Movie.segments.json) and skips, asks about or marks them. Shows the segments hook"
+  },
+  "version": "1.0.0",
+  "api": 2,
+  "velouna": ">=0.4.0",
+  "author": "BotAwesome",
+  "license": "MIT",
+  "main": "main.lua",
+  "provides": [
+    "service"
+  ],
+  "permissions": []
+}

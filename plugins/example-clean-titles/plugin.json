@@ -1,0 +1,21 @@
+{
+  "id": "dev.botawesome.example-clean-titles",
+  "name": {
+    "de": "Beispiel: Titel säubern",
+    "en": "Example: Clean titles"
+  },
+  "description": {
+    "de": "Entfernt „(Official Video)“ und Ähnliches aus Titeln und trennt „Interpret – Titel“. Zeigt den Hook track-info",
+    "en": "Removes “(Official Video)” and the like from titles and splits “Artist – Title”. Shows the track-info hook"
+  },
+  "version": "1.0.0",
+  "api": 2,
+  "velouna": ">=0.4.0",
+  "author": "BotAwesome",
+  "license": "MIT",
+  "main": "main.lua",
+  "provides": [
+    "service"
+  ],
+  "permissions": []
+}

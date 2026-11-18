@@ -1,0 +1,21 @@
+{
+  "id": "dev.botawesome.example-log",
+  "name": {
+    "de": "Beispiel: Titel-Log",
+    "en": "Example: Track log"
+  },
+  "description": {
+    "de": "Schreibt Titelwechsel, Pausen und Sprünge in die Plugin-Konsole. Zeigt Ereignisse und den eigenen Speicher",
+    "en": "Writes track changes, pauses and seeks to the plugin console. Shows events and the plugin's own storage"
+  },
+  "version": "1.0.0",
+  "api": 2,
+  "velouna": ">=0.4.0",
+  "author": "BotAwesome",
+  "license": "MIT",
+  "main": "main.lua",
+  "provides": [
+    "service"
+  ],
+  "permissions": []
+}
