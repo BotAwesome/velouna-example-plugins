@@ -1,0 +1,2 @@
+# signing keys never go into the repo
+*.key

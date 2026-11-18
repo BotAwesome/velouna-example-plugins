@@ -1,0 +1,113 @@
+{
+  "id": "dev.botawesome.example-sections",
+  "name": {
+    "de": "Beispiel: Songteile",
+    "en": "Example: Sections"
+  },
+  "description": {
+    "de": "Eine Sonne, die im Build-up wächst und beim Drop aufblitzt. Zeigt Songteile und zwei Presets, die sich Dateien teilen",
+    "en": "A sun that grows in the build-up and flares on the drop. Shows song sections and two presets sharing their files"
+  },
+  "version": "1.0.0",
+  "kind": "visualizer",
+  "api": 1,
+  "velouna": ">=0.2.1",
+  "author": "BotAwesome",
+  "license": "MIT",
+  "permissions": [],
+  "visualizer": {
+    "needs": "song",
+    "presets": [
+      {
+        "id": "sunset",
+        "name": {
+          "de": "Sonnenuntergang",
+          "en": "Sunset"
+        },
+        "score": "score.lua",
+        "passes": [
+          {
+            "id": "scene",
+            "shader": "horizon.glsl"
+          }
+        ],
+        "params": [
+          {
+            "id": "sun",
+            "label": {
+              "de": "Sonne",
+              "en": "Sun"
+            },
+            "min": 0.5,
+            "max": 2.0,
+            "default": 1.0
+          },
+          {
+            "id": "horizon",
+            "label": {
+              "de": "Horizont",
+              "en": "Horizon"
+            },
+            "min": -1.0,
+            "max": 2.0,
+            "default": 1.0
+          }
+        ],
+        "palettes": [
+          {
+            "name": {
+              "de": "Abend",
+              "en": "Evening"
+            },
+            "colors": ["#1a0b2e", "#ff6b4a", "#ffd166", "#ff4d6d", "#ff9e5e", "#ffe0a8", "#fff6ea"]
+          }
+        ]
+      },
+      {
+        "id": "moonrise",
+        "name": {
+          "de": "Mondaufgang",
+          "en": "Moonrise"
+        },
+        "score": "score.lua",
+        "passes": [
+          {
+            "id": "scene",
+            "shader": "horizon.glsl"
+          }
+        ],
+        "params": [
+          {
+            "id": "sun",
+            "label": {
+              "de": "Mond",
+              "en": "Moon"
+            },
+            "min": 0.5,
+            "max": 2.0,
+            "default": 0.7
+          },
+          {
+            "id": "horizon",
+            "label": {
+              "de": "Horizont",
+              "en": "Horizon"
+            },
+            "min": -1.0,
+            "max": 2.0,
+            "default": 1.6
+          }
+        ],
+        "palettes": [
+          {
+            "name": {
+              "de": "Mondlicht",
+              "en": "Moonlight"
+            },
+            "colors": ["#02040c", "#1b2b4f", "#e8eefc", "#9fb8ff", "#5a7bd6", "#cfe0ff", "#f2f6ff"]
+          }
+        ]
+      }
+    ]
+  }
+}

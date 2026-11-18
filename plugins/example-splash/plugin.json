@@ -1,0 +1,84 @@
+{
+  "id": "dev.botawesome.example-splash",
+  "name": {
+    "de": "Beispiel: Kleckse",
+    "en": "Example: Splash"
+  },
+  "description": {
+    "de": "Farbkleckse auf Kick, Snare und Hi-Hat, die langsam verlaufen. Zeigt eine Simulation mit step() in score.lua",
+    "en": "Splashes of colour on kick, snare and hi-hat that slowly run. Shows a simulation driven by step() in score.lua"
+  },
+  "version": "1.0.0",
+  "kind": "visualizer",
+  "api": 1,
+  "velouna": ">=0.2.1",
+  "author": "BotAwesome",
+  "license": "MIT",
+  "permissions": [],
+  "visualizer": {
+    "needs": "song",
+    "presets": [
+      {
+        "id": "splash",
+        "name": {
+          "de": "Kleckse",
+          "en": "Splash"
+        },
+        "score": "score.lua",
+        "passes": [
+          {
+            "id": "sim",
+            "shader": "sim.glsl",
+            "scale": 0.5,
+            "format": "rgba16f",
+            "feedback": true,
+            "rate": "step"
+          },
+          {
+            "id": "scene",
+            "shader": "draw.glsl",
+            "inputs": ["sim"]
+          }
+        ],
+        "params": [
+          {
+            "id": "size",
+            "label": {
+              "de": "Größe",
+              "en": "Size"
+            },
+            "min": 0.4,
+            "max": 2.0,
+            "default": 1.0
+          },
+          {
+            "id": "fade",
+            "label": {
+              "de": "Bleiben",
+              "en": "Linger"
+            },
+            "min": 0.0,
+            "max": 1.0,
+            "default": 0.6
+          }
+        ],
+        "palettes": [
+          {
+            "name": {
+              "de": "Papier",
+              "en": "Paper"
+            },
+            "colors": ["#ece6da", "#d9cfbd", "#d6402f", "#1f5fa8", "#e8b41c", "#222222", "#222222"]
+          },
+          {
+            "name": {
+              "de": "Nachts",
+              "en": "At night"
+            },
+            "colors": ["#08080c", "#14141c", "#ff4d6d", "#4dd2ff", "#ffd24d", "#ffffff", "#f2f2f7"]
+          }
+        ]
+      }
+    ]
+  }
+}

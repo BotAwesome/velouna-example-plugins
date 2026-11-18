@@ -1,0 +1,82 @@
+{
+  "id": "dev.botawesome.example-trails",
+  "name": {
+    "de": "Beispiel: Spuren",
+    "en": "Example: Trails"
+  },
+  "description": {
+    "de": "Kreisende Punkte, die Spuren ziehen. Zeigt zwei Passes und einen Feedback-Pass, der sein letztes Bild weitermalt",
+    "en": "Circling dots that leave trails. Shows two passes and a feedback pass that keeps painting on its last picture"
+  },
+  "version": "1.0.0",
+  "kind": "visualizer",
+  "api": 1,
+  "velouna": ">=0.2.1",
+  "author": "BotAwesome",
+  "license": "MIT",
+  "permissions": [],
+  "visualizer": {
+    "needs": "song",
+    "presets": [
+      {
+        "id": "trails",
+        "name": {
+          "de": "Spuren",
+          "en": "Trails"
+        },
+        "passes": [
+          {
+            "id": "trail",
+            "shader": "trail.glsl",
+            "scale": 0.5,
+            "format": "rgba16f",
+            "feedback": true
+          },
+          {
+            "id": "scene",
+            "shader": "draw.glsl",
+            "inputs": ["trail"]
+          }
+        ],
+        "params": [
+          {
+            "id": "length",
+            "label": {
+              "de": "Länge",
+              "en": "Length"
+            },
+            "min": 0.0,
+            "max": 1.0,
+            "default": 0.6
+          },
+          {
+            "id": "drift",
+            "label": {
+              "de": "Drift",
+              "en": "Drift"
+            },
+            "min": 0.0,
+            "max": 2.0,
+            "default": 1.0
+          }
+        ],
+        "palettes": [
+          {
+            "name": {
+              "de": "Tiefsee",
+              "en": "Deep sea"
+            },
+            "colors": ["#03070d", "#0a1a2a", "#2ee6d6", "#3d8bff", "#b06cff", "#ffffff", "#e8f6ff"]
+          },
+          {
+            "name": {
+              "de": "Feuerwerk",
+              "en": "Fireworks"
+            },
+            "colors": ["#07040a", "#1a0b1f", "#ff5a36", "#ffc93d", "#ff4fa3", "#ffffff", "#fff3e8"]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "dev.botawesome.example",
+  "name": {
+    "de": "Beispiel",
+    "en": "Example"
+  },
+  "description": {
+    "de": "Ein schlichter Visualizer zum Nachbauen: eine Scheibe, die mit Bass und Kick pulsiert, dazu Ringe aus score.lua",
+    "en": "A plain visualizer to learn from: a disc that pulses with bass and kick, plus rings from score.lua"
+  },
+  "version": "1.0.0",
+  "kind": "visualizer",
+  "api": 1,
+  "velouna": ">=0.2.1",
+  "author": "BotAwesome",
+  "license": "MIT",
+  "permissions": [],
+  "visualizer": {
+    "needs": "song",
+    "presets": [
+      {
+        "id": "pulse",
+        "name": {
+          "de": "Puls",
+          "en": "Pulse"
+        },
+        "score": "score.lua",
+        "passes": [
+          {
+            "id": "scene",
+            "shader": "draw.glsl"
+          }
+        ],
+        "params": [
+          {
+            "id": "size",
+            "label": {
+              "de": "Größe",
+              "en": "Size"
+            },
+            "min": 0.3,
+            "max": 2.5,
+            "default": 1.0
+          },
+          {
+            "id": "rings",
+            "label": {
+              "de": "Ringe",
+              "en": "Rings"
+            },
+            "min": 0.0,
+            "max": 2.0,
+            "default": 1.0
+          },
+          {
+            "id": "glow",
+            "label": {
+              "de": "Leuchten",
+              "en": "Glow"
+            },
+            "min": 0.0,
+            "max": 2.0,
+            "default": 1.0
+          }
+        ],
+        "palettes": [
+          {
+            "name": {
+              "de": "Nacht",
+              "en": "Night"
+            },
+            "colors": [
+              "#07080f",
+              "#141a33",
+              "#f04a6e",
+              "#ffb35c",
+              "#7fd4ff",
+              "#ff7a8f",
+              "#f2f2f7"
+            ]
+          },
+          {
+            "name": {
+              "de": "Wald",
+              "en": "Forest"
+            },
+            "colors": [
+              "#050b08",
+              "#0f2419",
+              "#5fd38a",
+              "#e8d36a",
+              "#a8f0ff",
+              "#9cffc4",
+              "#eef7f0"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

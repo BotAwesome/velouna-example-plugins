@@ -1,0 +1,156 @@
+{
+  "format": 1,
+  "name": "Velouna-Plugins",
+  "maintainer": "BotAwesome",
+  "homepage": "https://github.com/BotAwesome/velouna-plugins",
+  "key": "ed25519:NIsx6FGSN40zF7+GKzJEvPPPDkYEO+pDE7xY9+drOIQ=",
+  "plugins": [
+    {
+      "id": "dev.botawesome.example",
+      "name": {
+        "de": "Beispiel",
+        "en": "Example"
+      },
+      "description": {
+        "de": "Ein schlichter Visualizer zum Nachbauen: eine Scheibe, die mit Bass und Kick pulsiert, dazu Ringe aus score.lua",
+        "en": "A plain visualizer to learn from: a disc that pulses with bass and kick, plus rings from score.lua"
+      },
+      "kind": "visualizer",
+      "author": "BotAwesome",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "api": 1,
+          "velouna": ">=0.2.1",
+          "url": "packages/dev.botawesome.example/dev.botawesome.example-1.0.0.velounaplugin",
+          "sha256": "c6f630a5caff44fb797111f2f9413b42f9739a7b0003ec05e8328de115806de3",
+          "size": 3249,
+          "permissions": [],
+          "changes": ""
+        }
+      ]
+    },
+    {
+      "id": "dev.botawesome.example-bars",
+      "name": {
+        "de": "Beispiel: Balken",
+        "en": "Example: Bars"
+      },
+      "description": {
+        "de": "Acht Balken, einer pro Musikkurve. Zeigt einen Visualizer ganz ohne score.lua",
+        "en": "Eight bars, one per music curve. Shows a visualizer without any score.lua"
+      },
+      "kind": "visualizer",
+      "author": "BotAwesome",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "api": 1,
+          "velouna": ">=0.2.1",
+          "url": "packages/dev.botawesome.example-bars/dev.botawesome.example-bars-1.0.0.velounaplugin",
+          "sha256": "a4ad37ac1cdf9db8ebc983065d0caffa8eb33d61d77ee2922fff0dcc1a3140aa",
+          "size": 1954,
+          "permissions": [],
+          "changes": ""
+        }
+      ]
+    },
+    {
+      "id": "dev.botawesome.example-sections",
+      "name": {
+        "de": "Beispiel: Songteile",
+        "en": "Example: Sections"
+      },
+      "description": {
+        "de": "Eine Sonne, die im Build-up wächst und beim Drop aufblitzt. Zeigt Songteile und zwei Presets, die sich Dateien teilen",
+        "en": "A sun that grows in the build-up and flares on the drop. Shows song sections and two presets sharing their files"
+      },
+      "kind": "visualizer",
+      "author": "BotAwesome",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "api": 1,
+          "velouna": ">=0.2.1",
+          "url": "packages/dev.botawesome.example-sections/dev.botawesome.example-sections-1.0.0.velounaplugin",
+          "sha256": "de09e62ba5a54417ad8db2086789b216e5d107f12a14a58ce27cd686656e264e",
+          "size": 2576,
+          "permissions": [],
+          "changes": ""
+        }
+      ]
+    },
+    {
+      "id": "dev.botawesome.example-splash",
+      "name": {
+        "de": "Beispiel: Kleckse",
+        "en": "Example: Splash"
+      },
+      "description": {
+        "de": "Farbkleckse auf Kick, Snare und Hi-Hat, die langsam verlaufen. Zeigt eine Simulation mit step() in score.lua",
+        "en": "Splashes of colour on kick, snare and hi-hat that slowly run. Shows a simulation driven by step() in score.lua"
+      },
+      "kind": "visualizer",
+      "author": "BotAwesome",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "api": 1,
+          "velouna": ">=0.2.1",
+          "url": "packages/dev.botawesome.example-splash/dev.botawesome.example-splash-1.0.0.velounaplugin",
+          "sha256": "d812a8ae40f4ae944438bc8bed02377bee9b4d8b33565604f638e1c654fbb3c8",
+          "size": 3307,
+          "permissions": [],
+          "changes": ""
+        }
+      ]
+    },
+    {
+      "id": "dev.botawesome.example-trails",
+      "name": {
+        "de": "Beispiel: Spuren",
+        "en": "Example: Trails"
+      },
+      "description": {
+        "de": "Kreisende Punkte, die Spuren ziehen. Zeigt zwei Passes und einen Feedback-Pass, der sein letztes Bild weitermalt",
+        "en": "Circling dots that leave trails. Shows two passes and a feedback pass that keeps painting on its last picture"
+      },
+      "kind": "visualizer",
+      "author": "BotAwesome",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "api": 1,
+          "velouna": ">=0.2.1",
+          "url": "packages/dev.botawesome.example-trails/dev.botawesome.example-trails-1.0.0.velounaplugin",
+          "sha256": "6de772077324998be3b8cb4c4365be1c0c0e2b4344e7ceae1bdd83e970b26202",
+          "size": 2322,
+          "permissions": [],
+          "changes": ""
+        }
+      ]
+    },
+    {
+      "id": "dev.botawesome.velounizer",
+      "name": "Velounizer",
+      "description": {
+        "de": "Tinte, Aurora und Kontur: Bilder, die deiner Musik folgen",
+        "en": "Ink, Aurora and Contour: visuals that follow your music"
+      },
+      "kind": "visualizer",
+      "author": "BotAwesome",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "api": 1,
+          "velouna": ">=0.2.1",
+          "url": "packages/dev.botawesome.velounizer/dev.botawesome.velounizer-0.1.0.velounaplugin",
+          "sha256": "3f328497f1b800b6c59823fdd3bb4012eee019712dae52d85b831d55ccdce1e2",
+          "size": 12159,
+          "permissions": [],
+          "changes": ""
+        }
+      ]
+    }
+  ]
+}

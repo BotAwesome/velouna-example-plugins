@@ -1,0 +1,84 @@
+{
+  "id": "dev.botawesome.example-bars",
+  "name": {
+    "de": "Beispiel: Balken",
+    "en": "Example: Bars"
+  },
+  "description": {
+    "de": "Acht Balken, einer pro Musikkurve. Zeigt einen Visualizer ganz ohne score.lua",
+    "en": "Eight bars, one per music curve. Shows a visualizer without any score.lua"
+  },
+  "version": "1.0.0",
+  "kind": "visualizer",
+  "api": 1,
+  "velouna": ">=0.2.1",
+  "author": "BotAwesome",
+  "license": "MIT",
+  "permissions": [],
+  "visualizer": {
+    "needs": "song",
+    "presets": [
+      {
+        "id": "bars",
+        "name": {
+          "de": "Balken",
+          "en": "Bars"
+        },
+        "passes": [
+          {
+            "id": "scene",
+            "shader": "draw.glsl"
+          }
+        ],
+        "params": [
+          {
+            "id": "height",
+            "label": {
+              "de": "Höhe",
+              "en": "Height"
+            },
+            "min": 0.3,
+            "max": 1.5,
+            "default": 1.0
+          },
+          {
+            "id": "gap",
+            "label": {
+              "de": "Abstand",
+              "en": "Gap"
+            },
+            "min": 0.0,
+            "max": 0.6,
+            "default": 0.25
+          },
+          {
+            "id": "glow",
+            "label": {
+              "de": "Leuchten",
+              "en": "Glow"
+            },
+            "min": 0.0,
+            "max": 2.0,
+            "default": 1.0
+          }
+        ],
+        "palettes": [
+          {
+            "name": {
+              "de": "Neon",
+              "en": "Neon"
+            },
+            "colors": ["#06060c", "#150d2b", "#ff3d8b", "#b45cff", "#3dd6ff", "#ffe066", "#f2f2f7"]
+          },
+          {
+            "name": {
+              "de": "Glut",
+              "en": "Ember"
+            },
+            "colors": ["#0b0605", "#2a0f08", "#ff4a1c", "#ff9a2e", "#ffd76a", "#ffffff", "#fff4e6"]
+          }
+        ]
+      }
+    ]
+  }
+}
